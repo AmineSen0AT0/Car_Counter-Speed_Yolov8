@@ -44,6 +44,7 @@ ov_model=YOLO('yolov8n_openvino_model')
 # Tracking
 tracker = Sort(max_age=20, min_hits= 3, iou_threshold= 0.3)
 
+# those are lines points to draw theme
 limitsL1 = [350, 50, 510, 50]
 limitsL2 = [55, 200, 470, 200]
 
@@ -59,7 +60,7 @@ coco_yaml_path = 'coco8.yaml'
 # Extract class names from COCO dataset
 # classNames = coco_yaml_path[4]#['names']
 
-
+# ClassNames from coco dataset
 classNames = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck", "boat",
               "traffic light", "fire hydrant", "stop sign", "parking meter", "bench", "bird", "cat",
               "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra", "giraffe", "backpack", "umbrella",
