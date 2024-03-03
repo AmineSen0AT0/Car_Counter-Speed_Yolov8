@@ -7,8 +7,8 @@ import math
 import time
 from sort import *
 from PIL import Image, ImageEnhance, ImageFilter
-
 #
+##
 def apply_pil_enhancements(frame):
     pil_image = Image.fromarray(frame)  # Convert OpenCV frame to PIL image
 
